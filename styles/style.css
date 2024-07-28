@@ -250,7 +250,6 @@ button {
     background-color: var(--color-accent);
 }
 
-
 .content__video-card {
     display: flex;
     align-items: start;
@@ -262,12 +261,21 @@ button {
     font-family: var(--font-secondary), sans-serif;
     font-size: 30px;
     line-height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
     text-transform: uppercase;
+    text-overflow: ellipsis;
     margin-block-end: 6px;
+    inline-size: 200px;
 }
 
 .content__video-card-description {
     line-height: 90%;
+    display: -webkit-box;
+    overflow: hidden;
+    inline-size: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 .content__video-card-thumbnail {
